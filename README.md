@@ -2,7 +2,7 @@
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-This project generate the documentation for rest api in OpenAPI format
+This project generate the documentation from rest api in OpenAPI format
 
 ## Running the application in dev mode
 
