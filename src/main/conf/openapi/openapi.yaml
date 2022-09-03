@@ -1,0 +1,74 @@
+---
+openapi: 3.0.3
+info:
+  title: toth API
+  version: 1.0.0-SNAPSHOT
+servers:
+- url: http://localhost:8080
+  description: Auto generated value
+- url: http://0.0.0.0:8080
+  description: Auto generated value
+paths:
+  /apiV1/exApi:
+    get:
+      tags:
+      - api V 1
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestExample'
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ResponseExample'
+  /apiV1/v1.1:
+    get:
+      tags:
+      - api V 1
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /apiV1/v1.2:
+    get:
+      tags:
+      - api V 1
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas:
+    Date:
+      format: date
+      type: string
+      example: 2022-03-10
+    RequestExample:
+      type: object
+      properties:
+        id:
+          format: int32
+          type: integer
+        status:
+          type: string
+        active:
+          type: boolean
+    ResponseExample:
+      type: object
+      properties:
+        name:
+          type: string
+        surname:
+          type: string
+        dbo:
+          $ref: '#/components/schemas/Date'
