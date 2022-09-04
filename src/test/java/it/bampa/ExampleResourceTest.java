@@ -12,10 +12,10 @@ public class ExampleResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/api")
+          .when().get("/example/apiV1")
           .then()
              .statusCode(200)
-             .body(is("Hello from RESTEasy Reactive"));
+             .body(is("v1"));
     }
 
 }

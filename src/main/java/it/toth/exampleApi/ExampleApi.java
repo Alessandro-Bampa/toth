@@ -1,4 +1,4 @@
-package it.bampa.apiV1;
+package it.toth.exampleApi;
 
 import beans.request.RequestExample;
 import beans.response.ResponseExample;
@@ -9,15 +9,15 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.Date;
 
-@Path("/apiV1")
-public class apiV1 {
+@Path("/example")
+public class ExampleApi {
 
-     @Path("v1.1")
+     @Path("apiV1")
      @GET
      @Produces(MediaType.TEXT_PLAIN)
      public String v1() { return "v1";}
 
-     @Path("v1.2")
+     @Path("apiV2")
      @GET
      @Produces(MediaType.TEXT_PLAIN)
      public String v2() { return "v2";}
