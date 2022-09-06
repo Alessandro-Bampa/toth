@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class ExampleResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testApiV1Endpoint() {
         given()
           .when().get("/example/apiV1")
           .then()
